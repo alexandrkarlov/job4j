@@ -18,8 +18,8 @@ public class SqMaxTest {
     }
     @Test
     public void whenThirdMoreAll () {
-        int result = SqMax.max (2, 3, 4, 1);
-        assertThat (result,is(4));
+        int result = SqMax.max (5, 4, 8, 7);
+        assertThat (result,is(8));
     }
     @Test
     public void whenFourMoreAll () {
