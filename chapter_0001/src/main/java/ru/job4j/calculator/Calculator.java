@@ -1,3 +1,11 @@
+/**
+ * Калькулятор элементарный
+ * @author aKarlov
+ * @version 1
+ * @since 01.1.2020
+ */
+
+
 package ru.job4j.calculator;
 
 public class Calculator {
@@ -18,6 +26,10 @@ public class Calculator {
         System.out.println (first + "-" + second + "=" + result);
     }
     public static void main (String[] args) {
+        /**
+         * main
+         * @param args - args.
+         */
         add (1,1);
         div (4,2);
         multiply(2,1);
