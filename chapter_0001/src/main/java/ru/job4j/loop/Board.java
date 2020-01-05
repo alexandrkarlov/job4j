@@ -4,10 +4,10 @@ public class Board {
     public static void paint (int widht, int height){
         for (int row = 0; row<=height; row++){
             for (int cell = 0; cell < widht; cell++) {
-                if ((row%2 == 0 || row == 0) && (cell%2 == 0 || cell == 0)) {
+                if ((row + cell)%2 == 0 || (row + cell == 0)) {
                     System.out.print("X");
                 }
-                else if ((row%2 != 0) && cell%2 != 0) {
+                else if (row%2 != 0 && cell%2 != 0) {
                     System.out.print ("X");
                 }
                 else {
