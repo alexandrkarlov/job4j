@@ -25,4 +25,18 @@ public class CheckTest {
         boolean result = check.mono(input);
         assertThat(result, is(false));
     }
+    @Test
+    public void whenDataNotMonoByFalseThenFalse4Element() {
+        Check check = new Check();
+        boolean[] input = new boolean[] {false, false, true, true};
+        boolean result = check.mono(input);
+        assertThat(result, is(false));
+    }
+    @Test
+    public void whenDataNotMonoByTrueThenTrue4Element() {
+        Check check = new Check();
+        boolean[] input = new boolean[] {true, true, true, true};
+        boolean result = check.mono(input);
+        assertThat(result, is(true));
+    }
 }
