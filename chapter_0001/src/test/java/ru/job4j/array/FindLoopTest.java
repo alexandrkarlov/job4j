@@ -23,10 +23,18 @@ public class FindLoopTest {
         assertThat(result, is(expect));
     }
     @Test
-    public void whenArrayHas7ThenMinus1() {
+    public void whenFind3() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {5,10,3};
-        int result = find.indexOf(input,7);
+        int[] input = new int[] {5,2,10,2,4};
+        int result = find.indexOf1(input,2, 2, 4);
+        int expect = 3;
+        assertThat(result, is(expect));
+    }
+    @Test
+    public void whenFind7() {
+        FindLoop find = new FindLoop();
+        int[] input = new int[] {5,2,10,2,4};
+        int result = find.indexOf1(input,7, 2, 4);
         int expect = -1;
         assertThat(result, is(expect));
     }
