@@ -1,4 +1,4 @@
-package ru.job4j.array.akarlov;
+package ru.job4j.akarlov;
 
 public class SortSelectedMy {
     public static int[] sort(int[] data) {

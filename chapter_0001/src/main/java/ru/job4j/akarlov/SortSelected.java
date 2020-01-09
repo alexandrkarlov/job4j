@@ -1,4 +1,4 @@
-package ru.job4j.array.akarlov;
+package ru.job4j.akarlov;
 
 import ru.job4j.array.FindLoop;
 import ru.job4j.array.MinDiapason;

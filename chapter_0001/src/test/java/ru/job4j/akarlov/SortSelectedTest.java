@@ -1,7 +1,6 @@
-package ru.job4j.array.akarlov;
+package ru.job4j.akarlov;
 
 import org.junit.Test;
-import ru.job4j.array.akarlov.SortSelected;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
