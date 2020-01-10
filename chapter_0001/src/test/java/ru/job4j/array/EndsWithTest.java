@@ -9,7 +9,7 @@ public class EndsWithTest {
     public void whenStartWithPrefixThenTrue() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] post = {'l', 'o'};
-        boolean result = EndsWith.endsWith(word,post);
+        boolean result = EndsWith.endsWith(word, post);
         assertThat(result, is(true));
     }
     @Test

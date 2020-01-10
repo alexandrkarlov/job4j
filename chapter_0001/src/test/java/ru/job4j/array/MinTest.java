@@ -8,7 +8,7 @@ public class MinTest {
     @Test
     public void when() {
         assertThat(Min.findMin(
-                new int[] {0,5,10}
+                new int[] {0, 5, 10}
                 ),
                 is(0)
         );

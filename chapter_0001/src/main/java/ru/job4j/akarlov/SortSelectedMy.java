@@ -2,8 +2,8 @@ package ru.job4j.akarlov;
 
 public class SortSelectedMy {
     public static int[] sort(int[] data) {
-        for(int forward = 0; forward < data.length; forward++){
-            for(int index = forward; index < data.length; index++) {
+        for (int forward = 0; forward < data.length; forward++) {
+            for (int index = forward; index < data.length; index++) {
                 int min = data[forward];
                 if (min > data[index]) {
                     int perm = forward;
