@@ -9,7 +9,7 @@ public class Merge {
         int count = 0;
         int j = 0;
         int k = 0;
-        while (rsl[rsl.length - 1] == 0) {
+        while (k < left.length || j < right.length) {
             if (k > left.length - 1) {
                 min = right[j];
                 rsl[count] = min;
