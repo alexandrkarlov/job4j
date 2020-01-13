@@ -13,7 +13,7 @@ public class MatrixCheckTest {
                 {'X', 'X', 'X'},
                 {' ', ' ', ' '},
         };
-        boolean result = MatrixCheck.monoHorizontal(input, 1);
+        boolean result = MatrixCheck.horizontal(input, 1);
         assertThat(result, is(true));
     }
     @Test
@@ -23,7 +23,7 @@ public class MatrixCheckTest {
                 {' ', ' ', 'X'},
                 {' ', ' ', 'X'}
         };
-        boolean result = MatrixCheck.monoVertical(input, 2);
+        boolean result = MatrixCheck.vertical(input, 2);
         assertThat(result, is(true));
     }
     @Test
@@ -33,7 +33,7 @@ public class MatrixCheckTest {
                 {' ', 'X', ' '},
                 {' ', ' ', 'X'}
         };
-        char[] result = MatrixCheck.extractDiagonal(input);
+        char[] result = MatrixCheck.diagonal(input);
         char[] expect = {'X', 'X', 'X'};
         assertThat(result, is(expect));
     }
@@ -46,7 +46,7 @@ public class MatrixCheckTest {
                 {' ', ' ', 'X', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '},
         };
-        boolean result = MatrixCheck.isWin(input);
+        boolean result = MatrixCheck.win(input);
         assertThat(result, is(true));
     }
 
@@ -59,7 +59,7 @@ public class MatrixCheckTest {
                 {' ', ' ', 'X', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '},
         };
-        boolean result = MatrixCheck.isWin(input);
+        boolean result = MatrixCheck.win(input);
         assertThat(result, is(false));
     }
 
@@ -72,7 +72,7 @@ public class MatrixCheckTest {
                 {' ', ' ', 'X', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '},
         };
-        boolean result = MatrixCheck.isWin(input);
+        boolean result = MatrixCheck.win(input);
         assertThat(result, is(true));
     }
 }

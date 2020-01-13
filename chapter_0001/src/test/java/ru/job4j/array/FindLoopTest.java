@@ -26,7 +26,7 @@ public class FindLoopTest {
     public void whenFind3() {
         FindLoop find = new FindLoop();
         int[] input = new int[] {5, 2, 10, 2, 4};
-        int result = find.indexOf1(input, 2, 2, 4);
+        int result = find.index(input, 2, 2, 4);
         int expect = 3;
         assertThat(result, is(expect));
     }
@@ -34,7 +34,7 @@ public class FindLoopTest {
     public void whenFind7() {
         FindLoop find = new FindLoop();
         int[] input = new int[] {5, 2, 10, 2, 4};
-        int result = find.indexOf1(input, 7, 2, 4);
+        int result = find.index(input, 7, 2, 4);
         int expect = -1;
         assertThat(result, is(expect));
     }

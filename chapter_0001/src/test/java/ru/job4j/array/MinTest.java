@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 public class MinTest {
     @Test
     public void when() {
-        assertThat(Min.findMin(
+        assertThat(Min.min(
                 new int[] {0, 5, 10}
                 ),
                 is(0)
@@ -16,7 +16,7 @@ public class MinTest {
     @Test
     public void whenLastMin() {
         assertThat(
-                Min.findMin(
+                Min.min(
                         new int[] {10, 5, 3}
                 ),
                 is(3)
@@ -26,7 +26,7 @@ public class MinTest {
     @Test
     public void whenMiddleMin() {
         assertThat(
-                Min.findMin(
+                Min.min(
                         new int[] {10, 2, 5}
                 ),
                 is(2)
