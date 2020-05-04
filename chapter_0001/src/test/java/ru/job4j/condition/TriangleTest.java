@@ -7,12 +7,12 @@ import static org.junit.Assert.assertThat;
 public class TriangleTest {
     @Test
     public void whenExist() {
-        boolean result = Triangle.exist(2.0, 2.0, 3.0);
-        assertThat(result, is(true));
-    }
-    @Test
-    public void whenNotExist() {
-        boolean result = Triangle.exist(2.0, 1.0, 1.0);
-        assertThat(result, is(false));
+        Point first = new Point(15, 15);
+        Point second = new Point(15, 30);
+        Point third = new Point(30, 15);
+        Triangle testArea = new Triangle(first, second, third);
+        double result = testArea.area();
+        double except = 112.5;
+        assertThat(result, is(except));
     }
 }
